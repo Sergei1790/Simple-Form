@@ -1,21 +1,135 @@
 :root{
-    --main-font-family: 'Roboto', sans-serif; 
+    --main-font-family: 'Arvo', sans-serif; 
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 body{
     margin: 0;
     font-family: var(--main-font-family);
+    background-color: #022045;
 }
-.sund-form-wrapper{
+.sund-wrapper{
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
 }
 .sund-form-image{
-    width: 40vw;
-    background: url(https://static.wixstatic.com/media/a80349_b9fd7a26be1b4b89aa7c60a1a102a358~mv2.png/v1/fill/w_1073,h_885,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Moveboard_Slider_vo2.png) center/cover no-repeat;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: url(img/bg.png) right/cover no-repeat;
+    transform: scaleX(-1);
 }
 .sund{
-
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(-1);
+    padding: 1.5vw 2vw;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
 }
-.sund-form{
-    width: 60vw;
+.sund img{
+    width: 3rem;
+    margin-right: 1rem;
+}
+.sund span{
+    color: #7286c5;
+}
+.sund-form-wrapper{
+    width: 60%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.sund-form__title{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+.sund-form-main{
+    background-color: #011a3b;
+    padding: 3rem;
+    margin: 3rem -3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sund-form__subtitle{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+.sund-form fieldset{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.sund-input{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.sund-input input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-shadow: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+    outline: none;
+}
+.sund-input input:not(:placeholder-shown),
+.sund-input input:focus{
+    border: 1px solid lightgreen;
+}
+.sund-input input:not(:placeholder-shown) ~ label,
+.sund-input input:focus ~ label {
+    background-color: lightgreen;
+    top: -20px;
+    left: 0;
+    padding: .2rem .5rem;
+    border-radius: 10%;
+}
+
+.sund-input input:not(:valid)~ label{
+    background-color: red;
+}
+.sund-input input:not(:valid){
+    border: 1px solid red;
+}
+.sund-input label{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: 1rem;
+}
+.sund-account{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.sund-account a{
+    color: green;
+    font-weight: 700;
+    text-decoration: none;
+}
+.sund-account a:hover, 
+.sund-account a:focus{
+    opacity: .7;
 }

@@ -1,0 +1,11 @@
+@media(max-width:767px){
+    .sund-form-image{
+        height: 40vh;
+        width: 100%;
+    }
+    .sund{
+        padding: .5rem 1rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
