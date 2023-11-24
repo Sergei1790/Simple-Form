@@ -1,11 +1,31 @@
-@media(max-width:767px){
+@media(max-width:991px){
     .sund-form-image{
-        height: 40vh;
+        min-height: 280px;
         width: 100%;
     }
     .sund{
         padding: .5rem 1rem;
         font-size: 1.5rem;
         line-height: 1.5rem;
+    }
+    .sund-form-wrapper{
+        width: 100%;
+    }
+}
+@media(max-width:767px){
+    .sund-form-wrapper{
+        padding: 2rem;
+    }
+    .sund-form__title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .sund-form__subtitle{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .sund-form-main{
+        margin: 2rem -2rem;
+        padding: 2rem;
     }
 }
