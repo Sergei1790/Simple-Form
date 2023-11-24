@@ -1,5 +1,9 @@
+:root{
+    --main-font-family: 'Roboto', sans-serif; 
+}
 body{
     margin: 0;
+    font-family: var(--main-font-family);
 }
 .sund-form-wrapper{
     display: flex;
@@ -8,6 +12,9 @@ body{
 .sund-form-image{
     width: 40vw;
     background: url(https://static.wixstatic.com/media/a80349_b9fd7a26be1b4b89aa7c60a1a102a358~mv2.png/v1/fill/w_1073,h_885,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Moveboard_Slider_vo2.png) center/cover no-repeat;
+}
+.sund{
+
 }
 .sund-form{
     width: 60vw;

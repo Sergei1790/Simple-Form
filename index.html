@@ -5,18 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Elromco Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
     <div class="sund-form-wrapper">
-        <div class="sund-form-image"></div>
+        <div class="sund-form-image">
+            <div class="sund">
+                SunD
+            </div>
+        </div>
         <div class="sund-form">
             <div class="sund-form__title">
                 This is not a real online service! <br>
                 Sign up now to get started.
             </div>
             <form action="" method="post" class="sund-form">
-                
+                <div class="sund-form__subtitle">
+                    Let's do this!
+                </div>
+                <fieldset>
+                    <div class="sund-input">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="sund-input">
+                        <label for="fname">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="sund-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="sund-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="sund-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="sund-input">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" name="cpassword" id="cpassword">
+                    </div>
+                </fieldset>
+                <button class="sund-btn">Create Account</button>
             </form>
+            <div class="sund-account">
+                Already have an account? <a href="#">Log in</a>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
