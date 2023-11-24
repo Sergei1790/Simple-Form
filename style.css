@@ -112,10 +112,12 @@ body{
     border-radius: 10%;
 }
 
-.sund-input input:not(:valid)~ label{
+.sund-input input:not(:valid) ~ label,
+.sund-input input.error ~ label{
     background-color: #c30c0c;
 }
-.sund-input input:not(:valid){
+.sund-input input:not(:valid),
+.sund-input input.error{
     border: 1px solid #c30c0c;
 }
 .sund-input label{
