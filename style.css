@@ -119,7 +119,7 @@ body{
 .sund-input input:not(:valid), 
 .sund-input input.error{
     border: 1px solid #c30c0c;
-}
+} 
 .sund-input label{
     position: absolute;
     left: .5rem;
